@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import "./images";
+//import "./images";
 
 const App = () => <PersonList />;
 
@@ -15,9 +15,7 @@ const PersonList = () => {
       <Person person={people[0]} />
       <Person person={people[1]}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
+        tempor incididunt ut labore et dolore magna aliqua.
       </Person>
       <Person person={people[2]} />
     </section>
@@ -33,7 +31,7 @@ const Person = props => {
     <div className="person">
       <img src={url} alt="" />
       <div>
-        <h4>{name}</h4>
+        <h2>{name}</h2>
         <h4>{job}</h4>
         {children}
       </div>
